@@ -30,7 +30,6 @@ body {
         background: url("../images/image-product-mobile.jpg");
         width: 100%;
         height: 240px;
-        // background-position: center center;
         background-size: cover;
         border-radius: 10px 10px 0 0;
     }
@@ -41,13 +40,14 @@ body {
             font-family: $font_Montserrat;
             text-transform: uppercase;
             letter-spacing: 3.5px;
+            line-height: 0;
         }
         .big_text {
             font-family: $font_Fraunces;
             font-size: 2.15em;
         }
         .name {
-            margin-top: 30px;
+            margin-top: 20px;
             margin-bottom: 20px;
             color: $Very_dark_blue;
         }
@@ -63,6 +63,7 @@ body {
             gap: 25px;
             .price {
                 color: $Dark_cyan;
+                line-height: 0;
             }
             .original_price {
                 text-decoration: line-through;
@@ -100,20 +101,12 @@ body {
         }
         .content {
             padding: 35px 32px 32px 32px;
-            .category {
-                line-height: 0;
-            }
             .name {
                 margin-top: 27px;
                 margin-bottom: 30px;
             }
             .description {
                 margin-bottom: 38px;
-            }
-            .price_wrapper {
-                .price {
-                    line-height: 0;
-                }
             }
             button {
                 margin-top: 30px;
