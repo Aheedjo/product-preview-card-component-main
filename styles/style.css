@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f2ebe3;
+  font-size: 14px;
+  color: #6c7289;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 10px;
+  width: 92%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.wrapper .image {
+  background: url("../images/image-product-mobile.jpg");
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.wrapper .content {
+  padding: 27px 25px;
+  padding-left: 24px;
+}
+
+.wrapper .content .category {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+.wrapper .content .big_text {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.15em;
+}
+
+.wrapper .content .name {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #1c232b;
+}
+
+.wrapper .content .description {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 55px;
+  font-weight: 500;
+}
+
+.wrapper .content .price_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.wrapper .content .price_wrapper .price {
+  color: #3c8067;
+}
+
+.wrapper .content .price_wrapper .original_price {
+  text-decoration: line-through;
+  color: #6c7289;
+}
+
+.wrapper .content button {
+  width: 100%;
+  padding: 16px 0;
+  color: white;
+  background-color: #3c8067;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .wrapper .image {
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+    background: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .wrapper .content {
+    padding: 35px 32px 32px 32px;
+  }
+  .wrapper .content .category {
+    line-height: 0;
+  }
+  .wrapper .content .name {
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+  .wrapper .content .description {
+    margin-bottom: 38px;
+  }
+  .wrapper .content .price_wrapper .price {
+    line-height: 0;
+  }
+  .wrapper .content button {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
